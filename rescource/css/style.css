@@ -1,0 +1,67 @@
+    /*Variables*/
+    
+     :root {
+        --clr-black: rgb(0, 0, 0);
+        --clr-blue: rgba(38, 40, 138, 0.904);
+        --clr-white: rgb(255, 255, 255);
+        --clr-black: rgb(196, 185, 44);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'yekan-regular';
+    }
+    
+    html {
+        background-color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 200;
+        text-rendering: optimizeLegibility;
+    }
+    
+    body {
+        font-family: 'yekan-regular';
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    
+    h1::after {
+        display: block;
+        height: 2px;
+        background-color: var(--clr-blue);
+        content: " ";
+        width: 7rem;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    
+    section {
+        padding: 5rem 0;
+        text-align: center;
+    }
+    
+    button {
+        text-transform: uppercase;
+        background-color: var(--clr-black);
+        font-weight: bold;
+        color: var(--clr-white);
+        padding: 5rem;
+        border: 2px solid var(--clr-black);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .Reactive-parent {
+        background-color: gray;
+        padding: 20px;
+    }
+    
+    .Reactive-element {
+        border-radius: 2%;
+        transition: all 0.7s;
+    }
