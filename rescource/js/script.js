@@ -15,7 +15,7 @@ reactiveElement.addEventListener('mousemove', (e) => {
     if (x < halfWidth) {
         if (y < halfHeight) {
             reactiveElement.style.transform = `perspective(200px) rotateX(${roateIndex}deg) rotateY(-${roateIndex}deg)`;
-        } else if (y > (rect.height - halfHeight)) {
+        } else if (y > halfHeight) {
             reactiveElement.style.transform = `perspective(200px) rotateX(-${roateIndex}deg) rotateY(-${roateIndex}deg)`;
         }
     } else {
